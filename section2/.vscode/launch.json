@@ -8,7 +8,7 @@
             "name": "(Windows) Launch",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/linear_search.exe",
+            "program": "${workspaceFolder}/reverse_array.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
