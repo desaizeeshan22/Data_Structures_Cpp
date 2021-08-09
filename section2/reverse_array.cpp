@@ -26,10 +26,21 @@ void reverse_array(Array &arr){
     }
 
 }
+
+void reverse_array2(Array &arr){
+    for(int i{arr.length-1},j{0};i>j;i--,j++){
+        int temp=arr.A[i];
+        arr.A[i]=arr.A[j];
+        arr.A[j]=temp;
+    }
+}
+
 int main(){
     Array arr={{2,3,4,5,6},10,5};
     display(arr);
     printf("\n");
-    reverse_array(arr);
+    reverse_array2(arr);
     display(arr);
+
+    return 0;
 }
