@@ -39,11 +39,11 @@ void rec_display(struct Node *p) {
     rec_display(p->next);
     }
 }
-int main() {
-    int A[] = {3,5,7,10,15};
-    create(A,5);
-    rec_display(first);
-    printf("\n");
-    return 0;
+// int main() {
+//     int A[] = {3,5,7,10,15};
+//     create(A,5);
+//     rec_display(first);
+//     printf("\n");
+//     return 0;
 
-}
+// }
