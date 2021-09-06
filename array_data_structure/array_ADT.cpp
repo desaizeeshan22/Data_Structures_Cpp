@@ -1,12 +1,13 @@
 #include<iostream>
 #include<memory>
+template<class T>
 struct Array{
-    int *ptr;
+    T *ptr;
     int size;
     int length;
 };
 
-void display(const Array &arr){
+void display(const Array<int> &arr){
         printf("The elements of the array are: \n");
         printf("[ ");
         for(int i{0};i<arr.length;i++){
@@ -15,13 +16,13 @@ void display(const Array &arr){
         printf("] \n");
         
 }
-void append(Array *arr,int x){
+void append(Array<int> *arr,int x){
     if(arr->length<arr->size){
         
         arr->ptr[arr->length++]=x;
     }
 }
-void insert(Array &arr,int index,int element){
+void insert(Array<int> &arr,int index,int element){
     for(int i{arr.length};i>index;i--){
         arr.ptr[i]=arr.ptr[i-1];
     }
@@ -29,14 +30,14 @@ void insert(Array &arr,int index,int element){
     arr.length++;
 }
 
-void Delete(Array &arr,int index){
+void Delete(Array<int> &arr,int index){
     for(int i{index};i<arr.length-1;i++){
         arr.ptr[i]=arr.ptr[i+1];
     }
     arr.length--;
 }
 int main(){
-    Array arr;
+    Array<int> arr;
     printf("Enter size of an array :");
 
     scanf("%d",&arr.size);

@@ -8,7 +8,7 @@
             "name": "(Windows) Launch",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/section1/recursion_simple.exe",
+            "program": "${workspaceFolder}/stack/infix_to_postfix.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",

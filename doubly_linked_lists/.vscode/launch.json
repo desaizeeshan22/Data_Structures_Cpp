@@ -8,7 +8,7 @@
             "name": "(Windows) Launch",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/inserting_sorted_linked_list.exe",
+            "program": " ${workspaceFolder}/doubly_linked_list.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",

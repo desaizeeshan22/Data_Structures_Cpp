@@ -17,7 +17,7 @@ void create(int A[], int n) {
     for (int i = 1; i < n; i++) {
         t = new Node;
         t->data = A[i];
-        t->next = NULL;
+        t->next = last->next;
         last->next = t;
         last = t;
     }
@@ -73,7 +73,7 @@ void rec_display(struct Node *p) {
 // int main() {
 //     int A[] = {3,5,7,10,15};
 //     create(A,5);
-//     rec_display(first);
+//     display(first);
 //     printf("\n");
 //     return 0;
 
