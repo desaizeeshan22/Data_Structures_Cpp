@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string.h>
-#include <iostream>
+
 
 struct Stack{
     int size;
