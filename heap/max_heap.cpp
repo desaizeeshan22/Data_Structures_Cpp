@@ -14,10 +14,10 @@ class max_heap{
             return (index-1)/2;
         }
         int left_child(int index){
-            return 2*index+1>capacity-1?index:2*index+1;
+            return 2*index+1;
         }
          int right_child(int index){
-            return 2*index+2>capacity-1?index:2*index+2;
+            return 2*index+2;
         }
         void swap(int &x,int &y){
             int temp=x;
@@ -28,10 +28,11 @@ class max_heap{
             int lchild=left_child(i);
             int rchild=right_child(i);
             int largest=i;
+            static int l{2};
             if(lchild<heap_size && heap_arr[lchild]>heap_arr[i]){
                 largest=lchild;
             }
-            if(rchild<heap_size&&heap_arr[rchild]>largest){
+            if(rchild<heap_size&&heap_arr[rchild]>heap_arr[largest]){
                 largest=rchild;
             }
             if(largest!=i){
@@ -47,7 +48,7 @@ class max_heap{
             heap_size++;
             int i{heap_size-1};
             heap_arr[i]=num;
-            while(i>0 && heap_arr[i]>heap_arr[parent(i)]){
+            while(i!=0 && heap_arr[i]>heap_arr[parent(i)]){
                 swap(heap_arr[i],heap_arr[parent(i)]);
                 i=parent(i);
             }
