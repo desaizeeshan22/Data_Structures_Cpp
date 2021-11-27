@@ -42,5 +42,6 @@
         "ctime": "cpp",
         "map": "cpp",
         "iomanip": "cpp"
-    }
+    },
+    "cmake.configureOnOpen": false
 }
