@@ -8,7 +8,7 @@
             "name": "(Windows) Launch",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/sorting_algorithms/Bubble_sort.exe",
+            "program": "${workspaceFolder}/sorting_algorithms/merge_sort.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
